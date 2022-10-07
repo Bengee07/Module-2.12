@@ -5,11 +5,12 @@
 
 ### Self Study Check In
 
-Q1:
+Q1: How to back-up your data?
 
-Q2:
+Q2: What tools you will use to monitor your application?
 
-Q3:
+Q3: How important is logging? Do you need logging in all your application?
+
 
 ### Lesson Overview
 
@@ -80,8 +81,42 @@ Best Practices:
 - Build services focused on specific business domains and functionality: SOA builds services with well-delineated functions defined by business needs. Microservices use domain models and bounded context to limit this further so that each service does just one thing. Focusing on specific functionality enables you to differentiate the reliability requirements of different services, and target investments more specifically. A concise business problem and having a small team associated with each service also enables easier organizational scaling.
 - Provide service contracts per API: Service contracts are documented agreements between teams on service integration and include a machine-readable API definition, rate limits, and performance expectations. A versioning strategy allows clients to continue using the existing API and migrate their applications to the newer API when they are ready. Deployment can happen anytime, as long as the contract is not violated. The service provider team can use the technology stack of their choice to satisfy the API contract. Similarly, the service consumer can use their own technology.
 
+
+### Change Management
+Changes to your workload or its environment must be anticipated and accommodated to achieve reliable operation of the workload. Changes include those imposed on your workload, such as spikes in demand, as well as those from within, such as feature deployments and security patches.
+
+Using AWS, you can monitor the behavior of a workload and automate the response to KPIs. For example, your workload can add additional servers as a workload gains more users. You can control who has permission to make workload changes and audit the history of these changes.
+
+
+**Q: How do you monitor workload resources?**
+
+Logs and metrics are powerful tools to gain insight into the health of your workload. You can configure your workload to monitor logs and metrics and send notifications when thresholds are crossed or significant events occur. Monitoring enables your workload to recognize when low-performance thresholds are crossed or failures occur, so it can recover automatically in response.
+
+
+**Best Practices:**
+- Monitor all components for the workload (Generation): Monitor the components of the workload with Amazon CloudWatch or third-party tools. Monitor AWS services with Personal Health Dashboard
+- Define and calculate metrics (Aggregation): Store log data and apply filters where necessary to calculate metrics, such as counts of a specific log event, or latency calculated from log event timestamps
+- Send notifications (Real-time processing and alarming): Organizations that need to know, receive notifications when significant events occur
+- Automate responses (Real-time processing and alarming): Use automation to take action when an event is detected, for example, to replace failed components
+- Storage and Analytics: Collect log files and metrics histories and analyze these for broader trends and workload insights
+- Conduct reviews regularly: Frequently review how workload monitoring is implemented and update it based on significant events and changes
+- Monitor end-to-end tracing of requests through your system: Use AWS X-Ray or third-party tools so that developers can more easily analyze and debug distributed systems to understand how their applications and its underlying services are performing
+
+
+### Failure Management
+In any system of reasonable complexity, it is expected that failures will occur. Reliability requires that your workload be aware of failures as they occur and take action to avoid impact on availability. Workloads must be able to both withstand failures and automatically repair issues.
+
+With AWS, you can take advantage of automation to react to monitoring data. For example, when a particular metric crosses a threshold, you can trigger an automated action to remedy the problem. Also, rather than trying to diagnose and fix a failed resource that is part of your production environment, you can replace it with a new one and carry out the analysis on the failed resource out of band. Since the cloud enables you to stand up temporary versions of a whole system at low cost, you can use automated testing to verify full recovery processes.
+
+
+Q: How do you back up data?
+Back up data, applications, and configuration to meet your requirements for recovery time objectives (RTO) and recovery point objectives (RPO).
+
+Best Practices:
+- Identify and back up all data that needs to be backed up, or reproduce the data from sources: Amazon S3 can be used as a backup destination for multiple data sources. AWS services such as Amazon EBS, Amazon RDS, and Amazon DynamoDB have built in capabilities to create backups. Third-party backup software can also be used. Alternatively, if the data can be reproduced from other sources to meet RPO, you might not require a backup
+- Secure and encrypt backups: Detect access using authentication and authorization, such as AWS IAM, and detect data integrity compromise by using encryption.
+- Perform data backup automatically: Configure backups to be taken automatically based on a periodic schedule, or by changes in the dataset. RDS instances, EBS volumes, DynamoDB tables, and S3 objects can all be configured for automatic backup. AWS Marketplace solutions or third-party solutions can also be used.
+- Perform periodic recovery of the data to verify backup integrity and processes: Validate that your backup process implementation meets your recovery time objectives (RTO) and recovery point objectives (RPO) by performing a recovery test.
+
+
 ---
-
-## Part 3 - Insert Summary
-
-Insert Instructions
