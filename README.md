@@ -1,4 +1,4 @@
-# Insert Lesson Title
+# Principles in Cloud Architecture Design - Reliability
 
 ## Dependencies
 
@@ -10,10 +10,11 @@ Refer to the following markdown file for the respective sections of the class:
 ## Lesson Objectives
 
 Learners will understand:
-- Insert the knowledge to be acquired
+- what is reliability pillar
+- how to build architectures that have strong foundations, resilient architecture, consistent change management, and proven failure recovery processes
 
 Learners will be able to:
-- Insert the skillset to be acquired
+- apply reliability to the solutions that you have
 
 
 ## Lesson Plan
