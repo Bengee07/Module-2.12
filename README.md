@@ -10,7 +10,7 @@ Refer to the following markdown file for the respective sections of the class:
 ## Lesson Objectives
 
 Learners will understand:
-- what is reliability pillar
+- what is reliability
 - how to build architectures that have strong foundations, resilient architecture, consistent change management, and proven failure recovery processes
 
 Learners will be able to:
