@@ -23,11 +23,12 @@ Learners will be able to:
 |--------|-----|-------|
 |- 5mins |Start zoom session|So that students can join early and start class on time|
 |10 mins|Self studies check-in|Prepare 3 questions for students to answer as a form of warm up and engaging students with the lesson topic.|
-|30 mins|Conceptual Knowledge| Reliability Principles|
-|20 mins|Conceptual Knowledge| Best Practices for Reliability|
+|25 mins|Conceptual Knowledge| Reliability Principles|
+|25 mins|Activity| Best Practices for Reliability|
 ||**1 HR MARK**|
 |5 mins|Break|Break|
-|40 mins|Conceptual Knowledge| Best Practice for Reliability (continue)|
+|20 mins|Conceptual Knowledge| Reliability Principles|
+|20 mins|Activity| Best Practices for Reliability|
 |5 mins|Buffer|In case of overrun|
 |5 mins|Break||
 |5 mins|Assignment Briefing|Help students to understand the expectation and direction of the assignment to prevent mis-interpretations.|
