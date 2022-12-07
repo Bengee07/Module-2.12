@@ -34,6 +34,6 @@ Learners will be able to:
 |5 mins|Assignment Briefing|Help students to understand the expectation and direction of the assignment to prevent mis-interpretations.|
 ||**2 HR MARK**|
 |50 mins|Learners self attempt on assignments|
-|10 mins|Instructors assist learners to push changes to remote repository.|
+|10 mins|Recap|
 ||**END CLASS 3 HR MARK**|
 
